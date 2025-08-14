@@ -27,8 +27,7 @@ void initState() {
 }
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.sizeOf(context).height * 1;
-   // final width = MediaQuery.sizeOf(context).width * 1;
+    final height = MediaQuery.sizeOf(context).height * 1;//to use 100% of height
     return Scaffold(
       body: Container(
         child: Column(
