@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:newapp/Models/category_model.dart';
 
 class CategoriesCard extends StatelessWidget {
-  const CategoriesCard({super.key});
+  const CategoriesCard({super.key, required this.categories});
+  final CategoryModel categories;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class CategoriesCard extends StatelessWidget {
             height: 120,
 
             width: 170,
-            child: Image.asset('images/technology.jpeg', fit: BoxFit.cover),
+            child: Image.asset(categories.image!, fit: BoxFit.cover),
           ),
 
           // Gradient overlay
@@ -39,7 +41,7 @@ class CategoriesCard extends StatelessWidget {
             right: 16,
             bottom: 16,
             child: Text(
-              'technology'.toUpperCase(),
+              categories.title.toUpperCase(),
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

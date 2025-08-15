@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:newapp/services/news_service.dart';
 import 'package:newapp/views/homeScreen.dart';
 import 'package:newapp/views/splashScreen.dart';
 
 void main() {
-  NewsService().getTopHeadlines(category: 'business');
   runApp(MyApp());
 }
 
