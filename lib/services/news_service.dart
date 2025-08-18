@@ -6,7 +6,7 @@ import 'package:newapp/helper/api.dart';
 class NewsService {
   Future<List<ArticleModel>> getTopHeadlines({required String category}) async {
     final url =
-        'https://newsapi.org/v2/top-headlines?country=us&apiKey=3c88955c487e4d9db668f011dd85e737&category=$category';
+        'https://newsapi.org/v2/top-headlines?country=us&apiKey=407f8873e97c44d6af7897612b3cf076&category=$category';
 
     var response = await Api().get(url: url, token: null);
 

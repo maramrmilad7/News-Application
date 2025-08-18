@@ -5,14 +5,14 @@ class ArticleModel {
 
   ArticleModel({
     required this.title,
-    required this.description,
-    required this.imageUrl,
+     this.description,
+     this.imageUrl,
   });
   factory ArticleModel.fromJson(json) {
     return ArticleModel(
-      title: json['title'] ?? '',
-      description: json['description'] ?? '',
-      imageUrl: json['urlToImage'] ?? '',
+      title: json['title'] ?? ' No Title',
+      description: json['description'],
+      imageUrl: json['urlToImage'] ,
     );
   }
 }
