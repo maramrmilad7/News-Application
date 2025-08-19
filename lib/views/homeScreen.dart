@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:newapp/Models/article_model.dart';
-import 'package:newapp/services/news_service.dart';
 import 'package:newapp/widgets/CategoriesListView.dart';
 import 'package:newapp/widgets/NewsItemBuilder.dart';
-import 'package:newapp/widgets/news_item.dart';
-import 'package:newapp/widgets/newsitemlistview.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   static String id = '/home';

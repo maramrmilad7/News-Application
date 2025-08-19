@@ -15,7 +15,12 @@ class NewsItemListView extends StatelessWidget {
       ) {
         return Padding(
           padding: const EdgeInsets.only(bottom: 12),
-          child: NewsItem(articleModel: articles[index]),
+          child: GestureDetector(
+            
+            onTap: (){
+              Navigator.pushNamed(context, 'news_details', arguments: articles[index]);
+            },
+            child: NewsItem(articleModel: articles[index])),
         );
       }),
     );
