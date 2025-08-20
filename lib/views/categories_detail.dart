@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:newapp/Models/category_model.dart';
 import 'package:newapp/widgets/NewsItemBuilder.dart';
 
+// ignore: must_be_immutable
 class CategoryDetail extends StatelessWidget {
   CategoryDetail({super.key});
   static String id = 'category_detail';

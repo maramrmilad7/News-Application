@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:newapp/Models/article_model.dart';
 
-class NewsDetails extends StatelessWidget {
+// ignore: must_be_immutable
+class NewsDetails extends StatefulWidget {
   NewsDetails({super.key});
   static String id = 'news_details';
+
+  @override
+  State<NewsDetails> createState() => _NewsDetailsState();
+}
+
+class _NewsDetailsState extends State<NewsDetails> {
   late ArticleModel articleModel;
+  bool isBookmarked = false;
+  @override
+  void initState() {
+    super.initState();
+    isBookmarked = false;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +76,18 @@ class NewsDetails extends StatelessWidget {
               children: [
                 Icon(Icons.share, color: Colors.black54, size: 40),
                 SizedBox(width: 20),
-                Icon(Icons.bookmark, color: Colors.black54, size: 40),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      isBookmarked = !isBookmarked;
+                    });
+                  },
+                  child: Icon(
+                    isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+                    color: Colors.yellow,
+                    size: 40,
+                  ),
+                ),
               ],
             ),
           ],
