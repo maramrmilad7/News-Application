@@ -3,7 +3,7 @@ import 'package:newapp/Models/category_model.dart';
 import 'package:newapp/widgets/categories_card.dart';
 
 class CategoriesListView extends StatelessWidget {
-   CategoriesListView({super.key});
+  CategoriesListView({super.key});
   final List<CategoryModel> categories = CategoryModel.categories;
 
   @override
@@ -14,7 +14,13 @@ class CategoriesListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
         itemBuilder: (context, index) {
-          return CategoriesCard(categories: categories[index]);
+          return GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, 'category_detail',arguments: categories[index]);
+            },
+
+            child: CategoriesCard(categories: categories[index]),
+          );
         },
       ),
     );
