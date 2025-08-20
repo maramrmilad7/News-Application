@@ -1,8 +1,10 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:newapp/Models/article_model.dart';
 
 // ignore: must_be_immutable
 class NewsDetails extends StatefulWidget {
+  // ignore: prefer_const_constructors_in_immutables
   NewsDetails({super.key});
   static String id = 'news_details';
 
@@ -35,7 +37,9 @@ class _NewsDetailsState extends State<NewsDetails> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+           
+            },
             icon: Icon(Icons.more_vert, color: Colors.black),
           ),
         ],
@@ -74,7 +78,7 @@ class _NewsDetailsState extends State<NewsDetails> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Icon(Icons.share, color: Colors.black54, size: 40),
+                Icon(Icons.share, color: Colors.yellow, size: 40),
                 SizedBox(width: 20),
                 GestureDetector(
                   onTap: () {
@@ -95,4 +99,6 @@ class _NewsDetailsState extends State<NewsDetails> {
       ),
     );
   }
+
+
 }

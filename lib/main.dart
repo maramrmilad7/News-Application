@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/splashscreen': (context) => const SplashScreen(),
         '/home': (context) => const HomeScreen(),
-        'news_details' : (context) =>  NewsDetails(),
-        'category_detail': (context) =>  CategoryDetail(),
+        'news_details': (context) => NewsDetails(),
+        'category_detail': (context) => CategoryDetail(),
       },
       initialRoute: '/splashscreen',
       home: const SplashScreen(),
