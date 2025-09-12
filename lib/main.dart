@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
         'news_details': (context) => NewsDetails(),
         'category_detail': (context) => CategoryDetail(),
       },
-      initialRoute: '/splashscreen',
-      home: const SplashScreen(),
+     initialRoute: '/splashscreen',
+      home: SplashScreen(),
     );
   }
 }
