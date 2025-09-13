@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(child: SizedBox(height: 20)),
             SliverToBoxAdapter(
               child: Text(
-                'General News',
+                'General News!',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),

@@ -57,7 +57,7 @@ class _SliderState extends State<Slider> {
         Row(
           children: [
             Text(
-              'Breaking News',
+              'Breaking News!',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ],
