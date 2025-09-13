@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:newapp/widgets/CategoriesListView.dart';
 import 'package:newapp/widgets/NewsItemBuilder.dart';
+import 'package:newapp/widgets/image_slider.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   static String id = '/home';
@@ -37,6 +39,16 @@ class HomeScreen extends StatelessWidget {
           slivers: [
             SliverToBoxAdapter(child: CategoriesListView()),
             SliverToBoxAdapter(child: SizedBox(height: 32)),
+            SliverToBoxAdapter(child: ImageSlider(category: 'technology')),
+            SliverToBoxAdapter(child: SizedBox(height: 20)),
+            SliverToBoxAdapter(
+              child: Text(
+                'General News',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+            SliverToBoxAdapter(child: SizedBox(height: 20)),
+
             NewsItemBuilder(category: 'general'),
           ],
         ),
@@ -44,4 +56,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

@@ -54,9 +54,17 @@ class _SliderState extends State<Slider> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Row(
+          children: [
+            Text(
+              'Breaking News',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
         CarouselSlider(
           options: CarouselOptions(
-            height: 250.0,
+            height: 200.0,
             autoPlay: true,
             autoPlayInterval: Duration(seconds: 3),
             autoPlayAnimationDuration: Duration(milliseconds: 800),
