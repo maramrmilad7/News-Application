@@ -6,3 +6,7 @@ A simple Flutter news application with a clean and intuitive user interface that
 - fetching data from news api
 - Breaking News Section
 - Image Slider
+## 🛠️ Installation
+- Clone the repository
+- Run flutter pub get to install dependencies
+- Run flutter run to launch the application
