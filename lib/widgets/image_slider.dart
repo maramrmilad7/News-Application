@@ -84,9 +84,42 @@ class _SliderState extends State<Slider> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image: DecorationImage(
-                      image: NetworkImage(item.imageUrl ?? ''),
+                      image: NetworkImage(item.imageUrl ?? 'https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iv.t4wfeoK7Y/v1/1200x799.jpg'),
                       fit: BoxFit.cover,
                     ),
+                  ),
+                  child: Stack(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          gradient: LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Colors.black.withOpacity(0.7),
+                              Colors.transparent,
+                            ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 10,
+                        left: 9,
+                        right: 10,
+                        child: Text(
+                          item.title ,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               )
