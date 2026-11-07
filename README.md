@@ -28,7 +28,7 @@
 
 | Category Filter | News Details | Read Article |
 | :---: | :---: | :---: |
-| <img src="homeScreen.png" width="220"/> | <img src="categoriesScreen" width="220"/> | <img src="detailsScreen.png" width="220"/> |
+| <img src="homeScreen.png" width="220"/> | <img src="categoriesScreen.png" width="220"/> | <img src="detailsScreen.png" width="220"/> |
 
 </div>
 
