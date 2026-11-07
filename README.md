@@ -23,7 +23,7 @@
 <div align="center">
 
 | Splash Screen | Home (General News) | 
-| :---: | :---: | :---: |
+| :---: | :---: |
 | <img src="splashScreen.png" width="220"/> | <img src="homeScreen.png" width="220"/> | 
 
 | Category Filter | News Details | Read Article |
